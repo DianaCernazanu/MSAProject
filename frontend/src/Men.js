@@ -47,6 +47,9 @@ function Men() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  
+  
+  
 
   const openSidebar = () => {
     setSidebarOpen(true);
@@ -70,13 +73,16 @@ function Men() {
         </button>
 
         <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-          <a href="/Men">Men</a>
-          <a href="/Women">Women</a>
-          <a href="/">Home</a>
-          <a href="#">Sales</a>
-          <a href="#">About Us</a>
-          <a href="#">Log In</a>
-        </div>
+            <a href="/Men">Men</a>
+            <a href="/Women">Women</a>
+            <a href="/">Home</a>
+            <a href="#">Sales</a>
+            <a href="#">About Us</a>
+            <a href="#">Log In</a>
+            <button onClick={closeSidebar} className="close-sidebar-button">
+              <span className="close-icon">×</span>
+            </button>
+          </div>
       </>
     ) : (
       <div className="navbar">
