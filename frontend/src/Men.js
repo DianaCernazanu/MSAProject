@@ -69,27 +69,27 @@ function Men() {
       {isSmallScreen ? (
       <>
         <button onClick={toggleSidebar} className="sidebar-toggle">
-          {isSidebarOpen ? 'Close Sidebar' : 'Open Sidebar'}
+          &#9776;
         </button>
 
         <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+            <a href="/">Home</a>
             <a href="/Men">Men</a>
             <a href="/Women">Women</a>
-            <a href="/">Home</a>
-            <a href="#">Sales</a>
+            <a href="/Sales">Sales</a>
             <a href="#">About Us</a>
             <a href="#">Log In</a>
-            <button onClick={closeSidebar} className="close-sidebar-button">
-              <span className="close-icon">×</span>
+            <button className="close-sidebar-button" onClick={closeSidebar}>
+              X
             </button>
           </div>
       </>
     ) : (
       <div className="navbar">
+        <a href="/">Home</a>
         <a href="/Men">Men</a>
         <a href="/Women">Women</a>
-        <a href="/">Home</a>
-        <a href="#">Sales</a>
+        <a href="/Sales">Sales</a>
         <a href="#">About Us</a>
         <a href="#">Log In</a>
       </div>

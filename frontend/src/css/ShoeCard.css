@@ -102,4 +102,16 @@
   footer a:hover {
     color: #7d7d7d;
   }
+
+  @media (max-width: 1300px) {
+    .container {
+      width: 45%; /* Adjust width for two cards on a row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      width: 100%; /* Full width for one card on a row */
+    }
+  }
   
